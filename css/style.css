@@ -680,3 +680,45 @@ height:55px!important;
 opacity:.6;
 
 }
+
+/* ==========================
+   GitHub Profile Picture
+========================== */
+
+
+.profile-image{
+
+width:280px;
+
+height:280px;
+
+object-fit:cover;
+
+border-radius:50%;
+
+border:5px solid rgba(0,255,213,.5);
+
+animation:floating 5s infinite;
+
+
+box-shadow:
+
+0 0 40px rgba(0,255,213,.35),
+
+0 0 80px rgba(88,166,255,.2);
+
+
+transition:.4s;
+
+}
+
+
+.profile-image:hover{
+
+transform:scale(1.05);
+
+box-shadow:
+
+0 0 60px rgba(0,255,213,.6);
+
+}
