@@ -1,0 +1,465 @@
+/* ===========================================
+   Animations.css
+   Premium Motion & Effects
+=========================================== */
+
+/* -----------------------------
+   Fade In
+----------------------------- */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* -----------------------------
+   Slide Up
+----------------------------- */
+
+@keyframes slideUp {
+
+    from {
+        opacity: 0;
+        transform: translateY(80px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+/* -----------------------------
+   Slide Left
+----------------------------- */
+
+@keyframes slideLeft {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateX(-80px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateX(0);
+
+    }
+
+}
+
+/* -----------------------------
+   Slide Right
+----------------------------- */
+
+@keyframes slideRight {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateX(80px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateX(0);
+
+    }
+
+}
+
+/* -----------------------------
+   Floating Cards
+----------------------------- */
+
+@keyframes floating {
+
+    0% {
+
+        transform: translateY(0px);
+
+    }
+
+    50% {
+
+        transform: translateY(-10px);
+
+    }
+
+    100% {
+
+        transform: translateY(0px);
+
+    }
+
+}
+
+/* -----------------------------
+   Neon Glow
+----------------------------- */
+
+@keyframes glow {
+
+    0% {
+
+        box-shadow: 0 0 12px rgba(88,166,255,.25);
+
+    }
+
+    50% {
+
+        box-shadow:
+
+        0 0 35px rgba(88,166,255,.45),
+
+        0 0 60px rgba(0,255,213,.18);
+
+    }
+
+    100% {
+
+        box-shadow: 0 0 12px rgba(88,166,255,.25);
+
+    }
+
+}
+
+/* -----------------------------
+   Aurora Pulse
+----------------------------- */
+
+@keyframes aurora {
+
+    0%{
+
+        filter:hue-rotate(0deg);
+
+    }
+
+    50%{
+
+        filter:hue-rotate(35deg);
+
+    }
+
+    100%{
+
+        filter:hue-rotate(0deg);
+
+    }
+
+}
+
+/* -----------------------------
+   Button Shine
+----------------------------- */
+
+.btn{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.btn::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-130%;
+
+    width:60%;
+
+    height:100%;
+
+    background:
+
+    linear-gradient(
+
+        120deg,
+
+        transparent,
+
+        rgba(255,255,255,.5),
+
+        transparent
+
+    );
+
+    transition:.8s;
+
+}
+
+.btn:hover::before{
+
+    left:150%;
+
+}
+
+/* -----------------------------
+   Hero
+----------------------------- */
+
+.hero-left{
+
+    animation:slideLeft 1s ease;
+
+}
+
+.hero-right{
+
+    animation:slideRight 1s ease;
+
+}
+
+.glass-card{
+
+    animation:floating 5s ease-in-out infinite;
+
+}
+
+/* -----------------------------
+   Sections
+----------------------------- */
+
+section{
+
+    animation:fadeIn .8s ease;
+
+}
+
+/* -----------------------------
+   Scroll Reveal
+----------------------------- */
+
+.reveal{
+
+    opacity:0;
+
+    transform:translateY(60px);
+
+    transition:1s;
+
+}
+
+.reveal.active{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+/* -----------------------------
+   Skill Cards
+----------------------------- */
+
+.skill{
+
+    animation:slideUp .7s ease;
+
+}
+
+.skill:hover{
+
+    animation:glow 2s infinite;
+
+}
+
+/* -----------------------------
+   Repository Cards
+----------------------------- */
+
+.repo{
+
+    opacity:0;
+
+    transform:translateY(60px);
+
+    transition:
+
+    transform .35s,
+
+    opacity .8s,
+
+    border .35s;
+
+}
+
+.repo.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+.repo:hover{
+
+    animation:glow 2s infinite;
+
+}
+
+/* -----------------------------
+   Navigation Hover
+----------------------------- */
+
+nav a{
+
+    position:relative;
+
+}
+
+nav a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-5px;
+
+    width:0;
+
+    height:2px;
+
+    background:#00ffd5;
+
+    transition:.35s;
+
+}
+
+nav a:hover::after{
+
+    width:100%;
+
+}
+
+/* -----------------------------
+   Gradient Text
+----------------------------- */
+
+.hero span{
+
+    animation:aurora 6s infinite;
+
+}
+
+/* -----------------------------
+   Cursor Scaling
+----------------------------- */
+
+.cursor-hover{
+
+    transform:scale(2);
+
+}
+
+/* -----------------------------
+   Image Hover
+----------------------------- */
+
+img{
+
+    transition:.5s;
+
+}
+
+img:hover{
+
+    transform:scale(1.04);
+
+}
+
+/* -----------------------------
+   Footer
+----------------------------- */
+
+footer{
+
+    animation:fadeIn 1.5s;
+
+}
+
+/* -----------------------------
+   Loading Animation
+----------------------------- */
+
+.loader-logo{
+
+    animation:
+
+    pulse 1.2s infinite,
+
+    glow 2s infinite;
+
+}
+
+/* -----------------------------
+   Search Box
+----------------------------- */
+
+#search{
+
+    transition:.35s;
+
+}
+
+#search:focus{
+
+    box-shadow:
+
+    0 0 25px rgba(0,255,213,.2);
+
+}
+
+/* -----------------------------
+   Links
+----------------------------- */
+
+a{
+
+    transition:.3s;
+
+}
+
+a:hover{
+
+    color:#00ffd5;
+
+}
+
+/* -----------------------------
+   Smooth Card Movement
+----------------------------- */
+
+.glass,
+
+.repo,
+
+.skill,
+
+.glass-card{
+
+    will-change:transform;
+
+}
