@@ -73,3 +73,37 @@ The design focuses on:
 ---
 
 ## 📂 Project Structure
+
+
+---
+
+## 🌐 Live Website
+
+Visit:
+
+https://Fa1dz.github.io
+
+
+---
+
+## 📊 Development Focus
+
+Currently interested in:
+
+- 🔐 Cybersecurity
+- 🐍 Python development
+- 🌐 Networking
+- 🤖 Artificial Intelligence
+- 🧬 Data analysis
+
+
+---
+
+## 📫 Contact
+
+GitHub:
+
+https://github.com/Fa1dz
+
+
+---
